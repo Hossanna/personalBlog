@@ -1,56 +1,92 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-body{
-    margin: 1% 5%;
-    background-color: #f9f9fa;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-}
-.container {
-    margin: 14px;
-    padding: 27px;
-    background: #fff;
-}
-h1{
-    text-align: center;
+@media (min-width: 0px) {
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 1% 5%;
+        background-color: #f9f9fa;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        overflow-x: hidden;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container {
+        margin: 14px;
+        padding: 27px;
+        background: #fff;
+    }
+    h1{
+        text-align: center;
+    }
+
+    img{
+        width: 40%;
+        height: 30%;
+    }
+    .card{
+        padding: 1rem 1rem 1rem 2.5rem
+    }
+    .card-body {
+        height: 250px;
+        display: flex;
+        padding: 1rem 1rem;
+    }
+
+    .first{
+        width: 60%;
+        margin: auto;
+    }
+    .second{
+        width: 30%;
+        height: 80%;
+        margin: auto;
+        float: right;
+    }
+    h2{
+        text-align: center;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-img{
-    width: 40%;
-    height: 30%;
-}
-.card{
-    padding: 1rem 1rem 1rem 2.5rem
-}
-.card-body {
-    height: 250px;
-    display: flex;
-    padding: 1rem 1rem;
-}
-
-.first{
-    width: 60%;
-    margin: auto;
-}
-.second{
-    width: 30%;
-    height: 80%;
-    margin: auto;
-    float: right;
-}
-h2{
-    text-align: center;
-}
-.image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media(max-width: 750px){
+    .card-body {
+        height: 250px;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .first{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+    h1{
+        font-size: 19px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .card{
+        margin-top: 50px;
+    }
+    .first{
+        margin-bottom: 25px;
+    }
+    .conclusion{
+        margin-top: 25px;
+    }
 }
