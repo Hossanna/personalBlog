@@ -82,11 +82,21 @@
     }
     .card{
         margin-top: 50px;
+        padding: 1rem;
+    }
+    .jog{
+        margin-top: 75px;
     }
     .first{
         margin-bottom: 25px;
     }
     .conclusion{
         margin-top: 25px;
+    }
+    #bad{
+        margin: 0 auto;
+    }
+    #good{
+        margin-top: 0;
     }
 }
